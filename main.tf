@@ -9,6 +9,12 @@ terraform {
       version = "3.7.2"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "StorageRG"
+    storage_account_name = "taskboardstorage78soll"
+    container_name       = "taskboardcontainer"
+    key                  = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
