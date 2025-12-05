@@ -1,7 +1,7 @@
 
 
 variable "resource_group_name" {
-  type        = string
+  type                             = string
   description = "Resource group name in Azure"
 }
 
